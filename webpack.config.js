@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 // ExtractTextPlugin doesn't work with Webpack 4
 // const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const rootPath = path.join(__dirname, "./");
 const distPath = path.join(__dirname, "./dist");
@@ -39,9 +40,10 @@ const rules = [
 ];
 
 const plugins = [
+  new CleanWebpackPlugin(['dist']),
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NamedModulesPlugin(),
-  new HtmlWebpackPlugin({ template: path.join(rootPath, "index.html") }),
+  new HtmlWebpackPlugin({ template: path.join(srcPath, "index.html") }),
   new MiniCssExtractPlugin()
 ];
 
@@ -49,8 +51,10 @@ module.exports = {
   entry: path.join(srcPath, "index.tsx"),
   mode: 'production',
   output: {
-    path: distPath,
-    filename: "[name].js"
+    path: rootPath,
+    // HTML need to be under root for github pages
+    publicPath: '',
+    filename: "dist/js/[name].js"
   },
   module: {
     rules

@@ -2,7 +2,7 @@
   "name": "mingruizhang.github.io",
   "version": "1.0.0",
   "description": "My personal website",
-  "main": "dist/index.html",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=development webpack-dev-server --mode=development --hot",
@@ -21,6 +21,7 @@
   "devDependencies": {
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.8",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "eslint": "^5.6.1",
     "eslint-config-prettier": "^3.1.0",
