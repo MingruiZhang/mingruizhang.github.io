@@ -1,0 +1,50 @@
+{
+  "name": "mingruizhang.github.io",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development webpack-dev-server --mode=development --hot",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MingruiZhang/mingruizhang.github.io.git"
+  },
+  "author": "Mingrui Zhang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MingruiZhang/mingruizhang.github.io/issues"
+  },
+  "homepage": "https://github.com/MingruiZhang/mingruizhang.github.io#readme",
+  "devDependencies": {
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.8",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.6.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.14.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.0",
+    "ts-loader": "^5.2.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
