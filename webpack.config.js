@@ -20,20 +20,17 @@ const rules = [
   {
     test: /\.css$/,
     use: [
-      {
-        loader: MiniCssExtractPlugin.loader
-      },
-      {
-        loader: "css-loader",
-        options: {
-          sourceMap: true,
-          modules: true,
-          localIdentName: "[local]___[hash:base64:5]"
-        }
-      },
-      {
-        loader: "postcss-loader"
-      }
+      MiniCssExtractPlugin.loader,
+      // 'style-loader',
+      "css-loader"
+      // {
+      //   loader: "css-loader",
+      //   options: {
+      //     sourceMap: true,
+      //     modules: true,
+      //   }
+      // }
+      // { loader: 'postcss-loader' }
     ]
   },
   { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
@@ -44,7 +41,7 @@ const plugins = [
   new webpack.HotModuleReplacementPlugin(),
   new webpack.NamedModulesPlugin(),
   new HtmlWebpackPlugin({ template: path.join(srcPath, "index.html") }),
-  new MiniCssExtractPlugin()
+  new MiniCssExtractPlugin({ filename: "dist/css/[name].css" })
 ];
 
 module.exports = {
