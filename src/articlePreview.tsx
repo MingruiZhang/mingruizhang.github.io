@@ -10,13 +10,16 @@ export default class ArticlePreview extends React.Component<ArcticlePreviewProps
     const {
       article: { content, title, time }
     } = this.props;
-    const header = `${title} - ${time}`;
-    const htmlContent = { __html: content };
+    const previewContent = content.split("。")[0] + " ...";
+    const htmlContent = { __html: previewContent };
     return (
-      <React.Fragment>
-        <h3>{header}</h3>
+      <div className="article-preview-container">
+        <p className="article-preview-time">{time}</p>
+        <h3 className="article-preview-header">
+          <a href="#">{title}</a>
+        </h3>
         <p className="article-preview-text" dangerouslySetInnerHTML={htmlContent} />
-      </React.Fragment>
+      </div>
     );
   }
 }

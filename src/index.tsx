@@ -3,8 +3,8 @@ import * as ReactDOM from "react-dom";
 
 import "./style.css";
 
+import ArticleData from "../articles/articleData";
 import ArticlePreview from "./articlePreview";
-import ArticleData from "./articles-json/articleData";
 
 export interface ArticleType {
   title: string;
@@ -19,7 +19,7 @@ class App extends React.Component<{}, {}> {
         <div className="root">
           <section className="header-container">
             <h1 className="header">Mingrui Zhang</h1>
-            <h3 className="header-sub">A place I think and write.</h3>
+            <h3 className="header-sub">Think and Write. 随思而作.</h3>
           </section>
           <section className="main-container">
             {ArticleData.map((article: ArticleType) => (

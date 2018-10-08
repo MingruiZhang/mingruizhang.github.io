@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=development webpack-dev-server --mode=development --hot",
-    "build": "webpack"
+    "build": "webpack",
+    "article": "node tools/txt2json.js"
   },
   "repository": {
     "type": "git",
