@@ -1,33 +1,31 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./style.css";
 
 import ArticleData from "../articles/articleData";
-import ArticlePreview from "./articlePreview";
 
-export interface ArticleType {
-  title: string;
-  time: string;
-  content: string;
-}
+import Article from "./Article";
+import Home from "./Home";
+import { ArticleType } from "./types";
 
 class App extends React.Component<{}, {}> {
   render() {
     return (
-      <React.Fragment>
+      <Router>
         <div className="root">
-          <section className="header-container">
-            <h1 className="header">Mingrui Zhang</h1>
-            <h3 className="header-sub">Think and Write. 随思而作.</h3>
-          </section>
-          <section className="main-container">
-            {ArticleData.map((article: ArticleType) => (
-              <ArticlePreview article={article} />
-            ))}
-          </section>
+          <Route exact path="/" render={() => <Home articleData={ArticleData} />} />
+          <Route
+            path="/article/:articleId"
+            render={({ match }) => {
+              const articleId = match.params.articleId;
+              const matchingArticle = ArticleData.find((article: ArticleType) => article.id === articleId);
+              return <Article article={matchingArticle} />;
+            }}
+          />
         </div>
-      </React.Fragment>
+      </Router>
     );
   }
 }

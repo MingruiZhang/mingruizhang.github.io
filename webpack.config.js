@@ -50,11 +50,14 @@ module.exports = {
   output: {
     path: rootPath,
     // HTML need to be under root for github pages
-    publicPath: '',
+    publicPath: '/',
     filename: "dist/js/[name].js"
   },
   module: {
     rules
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   // Enable sourcemaps for debugging webpack's output.
   devtool: "source-map",

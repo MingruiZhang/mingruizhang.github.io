@@ -11,7 +11,7 @@ fs.readdir(articlePath, (err, filenames) => {
       const content = fs.readFileSync(path.join(articlePath, filename), "utf8");
       const [time, title] = filename.split(" - ");
       const articleData = {
-        id: index, // TODO: Probably a better way is to Hash the title
+        id: index.toString(), // TODO: Probably a better way is to Hash the title
         content,
         title: title.replace(/\.[^/.]+$/, ""), // remove .txt extention
         time
