@@ -9,7 +9,7 @@ export default class Home extends React.Component<MainProps, {}> {
     return (
       <React.Fragment>
         <section className="header-container">
-          <h1 className="header">Mingrui Zhang</h1>
+          <h1 className="header">Ming's Blog</h1>
           <h3 className="header-sub">Think and Write. 随思而作.</h3>
         </section>
         <section className="main-container">
