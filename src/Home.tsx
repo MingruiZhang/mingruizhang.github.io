@@ -9,8 +9,8 @@ export default class Home extends React.Component<MainProps, {}> {
     return (
       <React.Fragment>
         <section className="header-container">
-          <h1 className="header">Ming's Blog</h1>
-          <h3 className="header-sub">Think and Write. 随思而作.</h3>
+          <h1 className="header">标题太难</h1>
+          <h3 className="header-sub">Whatever comes to mind</h3>
         </section>
         <section className="main-container">
           {articleData.map((article: ArticleType) => (
