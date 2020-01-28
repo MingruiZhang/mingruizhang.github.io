@@ -9,13 +9,14 @@ fs.readdir(articlePath, (err, filenames) => {
   filenames.forEach((filename, index) => {
     if (filename.match(/\.txt/)) {
       const content = fs.readFileSync(path.join(articlePath, filename), "utf8");
-      const [time, title] = filename.split(" - ");
+      const [time, title] = filename.split(" - ").length > 1 ? filename.split(" - ") : ['', filename];
       const articleData = {
-        id: index.toString(), // TODO: Probably a better way is to Hash the title
+        id: index.toString(), // TODO: A better way is to Hash the title
         content,
-        title: title.replace(/\.[^/.]+$/, ""), // remove .txt extention
+        title: title.replace(/\.[^/.]+$/, ""), // remove .txt extension
         time
       };
+      // TODO: Figure out how to order properly
       articleArray.unshift(articleData); // We want newer articles at the front.
     }
   });
@@ -28,24 +29,3 @@ fs.readdir(articlePath, (err, filenames) => {
     }
   );
 });
-
-// filenames.forEach((filename, index) => {
-// 	fs.readFile(path.join(articlePath, filename), "utf8", (err, data) => {
-// 		if (err) throw err;
-// 		const [time, title] = filename.split(" - ");
-// 		const articleData = {
-// 			id: index, // TODO: Probably a better way is to Hash the title
-// 			content: data,
-// 			title: title.replace(/\.[^/.]+$/, ""), // remove .txt extention
-// 			time
-// 		};
-// 		fs.writeFile(
-// 			path.join(articleJsonPath, `article-${index}.json`),
-// 			JSON.stringify(articleData),
-// 			"utf8",
-// 			() => {
-// 				console.log(`[Done] ${filename}`)
-// 			}
-// 		);
-// 	});
-// });

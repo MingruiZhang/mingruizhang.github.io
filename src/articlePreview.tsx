@@ -10,9 +10,9 @@ export default class ArticlePreview extends React.Component<ArticleProps, {}> {
     } = this.props;
     const previewContent =
       content
+        .split("\n\n")[0]
         .replace(/\n/g, " ")
-        .split("\b")[0]
-        .split("。")[0] + " ...";
+        .substring(0, 50) + " ...";
     const htmlContent = { __html: previewContent };
     return (
       <div className="article-preview-container">

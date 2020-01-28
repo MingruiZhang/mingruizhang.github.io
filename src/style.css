@@ -20,12 +20,11 @@ a {
   padding-bottom: 1px;
 }
 
-a:visited,
+/* a:visited,
 a:active,
 a:hover {
   color: inherit;
-  border-bottom: 1px solid black;
-}
+} */
 
 .root {
   max-width: 960px;
@@ -64,7 +63,12 @@ a:hover {
 }
 
 .article-preview-title {
+  font-weight: bold;
   margin-bottom: 5px;
+}
+
+.article-preview-title a {
+  border-bottom: 1px solid black;
 }
 
 .article-preview-time {
