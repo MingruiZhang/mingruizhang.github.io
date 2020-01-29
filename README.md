@@ -1,5 +1,3 @@
-https://mingruizhang.github.io/
-
 ## Write a blog
 1. Create a .txt file under articles, title should be [yyyy].[mm].[dd] - [category] · [title].txt
 2. Run `yarn article` to generate the article data.
