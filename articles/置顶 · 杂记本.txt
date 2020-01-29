@@ -12,10 +12,15 @@ Nonviolent Communication
 全球通史（下）
 漫步华尔街
 非理性繁荣
+时间简史
+未来简史
+影响力
 
-<strong>-- 这个网站todo --</strong>
+<strong>-- blog features --</strong>
 
-quote
+<s>quote</s>
+<s>responsive</s>
 字数统计
 标签统计
+js hash
 
