@@ -1,6 +1,12 @@
-NVC的读后感，总结下每一章的内容，写出重点，最后总结对自己的要求
+<strong>-- 读后感 --</strong>
 
-<strong>-- 摘要 --</strong>
+NVC核心的观念在于沟通重在双方的感受和需求，表达自己的感受和需求，同情别人的感受和需求。
+
+1. 挖掘自己的感受和需求是什么，尤其是生气的时候，明白不是别人让我生气，是自己的需求没有被满足。
+2. 表达的时候按照NVC，去表达自己的感受和需求。
+3. 聆听别人的时候不做judgments，empathize对方的感受。
+
+<strong>-- 每章摘要 --</strong>
 
 <i>1. Giving From the Heart</i>
 
@@ -139,6 +145,45 @@ communicate的时候一定要明确我们想到得到什么。request不是deman
 当生气的时候。1. 深呼吸 2. 把握生气时候的想法 3. 挖掘自己的需求是什么。4. 通过NVC表达自己的需求。
 慢慢来。
 
+<i>11. Conflict Resolution and Mediation</i>
 
+<q>Creating a connection between people is the most important thing.
+  When you make the connection, the problem usually solves itself.
+  Avoid the use of language that implies wrongness.
+  Learn to hear needs regardless of how people express them.
+  Criticism and diagnosis get in the way of peaceful resolution of conflict.
+  People often need empathy before they are able to hear what is being said.
+  The objective is not to get the other parties to do what we want them to do.
+  Role-play is simply putting ourselves in the other person's shoes.
+</q>
+处理conflict的时候最重要的是让双方可以交流彼此的needs。 当双方能听到对方的needs问题就自然会解决。如果有一方有太多pain我们就empathy，听到no不是rejection，是一个机会我们我需要进一步了解needs.
 
-<strong>-- 总结 --</strong>
+<i>12. The Protective Use of Force</i>
+
+<q>The intention behind the protective use of force is only to protect, not to punish, blame or condemn.
+  Fear of corporal punishment obscures children's awareness of the compassion underlying their parents' demands.
+  When we fear punishment, we focus on consequences, not on our own values.
+  Fear of punishment diminishes self-esteem and goodwill.
+</q>
+
+使用force的主要intention只能是protect，punish会产生敌意和抵触心理，即使可以实现你希望别人做什么的结果，但是别人的motivation还是很低，无法长期维持。
+
+<i>13. Liberate Ourselves and Counseling Others</i>
+
+<q>The ability to hear our own feelings and needs and empathize with them can free us from depression.
+  Focus on what we want to do rather than what went wrong.
+  Defuse stress by hearing our own feelings and needs.
+  Defuse stress by empathizing with others.
+  I empathized with clients instead of interpreting them; I reveled myself instead of diagnosing them.
+</q>
+
+NVC帮助inner communication，当我们有负面情绪的时候，把他们转换成feelings and needs然后去empathy. 发现自己深处的需求而不是怪罪自己或者别人.
+
+<i>14. Expressing Appreciation in NVC</i>
+
+<q>Compliments are often judgments - however positive-of others.
+  Express appreciation to celebrate, not to manipulate.
+  Saying "thank you" in NVC: "this is what you did; this is what I feel; this is the need of mine that was met."
+  Receiving appreciation without feeling of superiority or false humility.
+</q>
+表达appreciation也会从NVC做起，表达对方做了什么，你的感受如何，你的什么need被fulfill了。不要试图通过appreciation去操控别人，长期无效。
