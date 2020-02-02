@@ -23,4 +23,5 @@ Nonviolent Communication
 字数统计
 标签统计
 js hash
+favicon
 
