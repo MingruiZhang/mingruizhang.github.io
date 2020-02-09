@@ -21,16 +21,7 @@ const rules = [
     test: /\.css$/,
     use: [
       MiniCssExtractPlugin.loader,
-      // 'style-loader',
       "css-loader"
-      // {
-      //   loader: "css-loader",
-      //   options: {
-      //     sourceMap: true,
-      //     modules: true,
-      //   }
-      // }
-      // { loader: 'postcss-loader' }
     ]
   },
   { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
