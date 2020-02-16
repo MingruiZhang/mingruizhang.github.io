@@ -5,6 +5,7 @@
 <i>- 已读 -</i>
 全球通史（上）
 Nonviolent Communication
+To Kill a Mockingbird
 
 <i>- 备选 -</i>
 创新者的窘境
@@ -20,9 +21,15 @@ Nonviolent Communication
 
 <s>quote</s>
 <s>responsive</s>
-css-in-js
+<s>css-in-js (w. emotion)</s>
+<s>react fc</s>
+<s>babel instead of ts-loader</s>
+<s>eslint</s>
+<s>js hash</s>
 字数统计
+侧栏
 标签统计
-js hash
 favicon
+动态yarn article
+node in ts
 
