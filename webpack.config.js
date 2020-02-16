@@ -11,7 +11,7 @@ const srcPath = path.join(__dirname, "./src");
 const rules = [
   {
     test: /\.tsx?$/,
-    use: "ts-loader",
+    use: "babel-loader",
     exclude: /node_modules/
   },
   {
