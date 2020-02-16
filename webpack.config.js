@@ -4,7 +4,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
-const distPath = path.join(__dirname, "./dist");
+const rootPath = path.join(__dirname, "./");
 const srcPath = path.join(__dirname, "./src");
 
 const commonPlugins = [new HtmlWebpackPlugin({ template: path.join(srcPath, "index.html") })];
@@ -18,10 +18,10 @@ module.exports = () => {
     entry: path.join(srcPath, "index.tsx"),
     mode: isDev ? "development" : "production",
     output: {
-      path: distPath,
+      path: rootPath,
       // HTML need to be under root for github pages
-      publicPath: "/",
-      filename: "[name].[hash:8].js"
+      publicPath: "./",
+      filename: "dist/[name].[hash:8].js"
     },
     module: {
       rules: [
