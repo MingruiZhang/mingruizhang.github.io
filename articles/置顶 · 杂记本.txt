@@ -32,4 +32,5 @@ To Kill a Mockingbird
 favicon
 动态yarn article
 node in ts
+slide in
 
