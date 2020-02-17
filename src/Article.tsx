@@ -24,7 +24,9 @@ const Article = (props: ArticleProps) => {
   return (
     <>
       <ArticleTitle>{title}</ArticleTitle>
-      <ArticleTime>{time}</ArticleTime>
+      <ArticleTime>
+        {time} - {content.length} words
+      </ArticleTime>
       <ArticleText dangerouslySetInnerHTML={htmlContent} />
     </>
   );

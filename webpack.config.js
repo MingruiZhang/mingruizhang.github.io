@@ -1,14 +1,17 @@
-const webpack = require("webpack");
 const path = require("path");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
-const rootPath = path.join(__dirname, "./");
 const srcPath = path.join(__dirname, "./src");
 
-const commonPlugins = [new HtmlWebpackPlugin({ template: path.join(srcPath, "index.html") })];
-const devPlugin = [new webpack.HotModuleReplacementPlugin()];
+const commonPlugins = [
+  new HtmlWebpackPlugin({
+    template: path.resolve(srcPath, "./index.html"),
+    filename: path.resolve(__dirname, "./index.html")
+  })
+];
+const devPlugin = [];
 const prodPlugin = [new CleanWebpackPlugin(["dist"])];
 
 module.exports = () => {
@@ -18,9 +21,8 @@ module.exports = () => {
     entry: path.join(srcPath, "index.tsx"),
     mode: isDev ? "development" : "production",
     output: {
-      path: rootPath,
+      path: __dirname,
       // HTML need to be under root for github pages
-      publicPath: "./",
       filename: "dist/[name].[hash:8].js"
     },
     module: {
@@ -29,12 +31,12 @@ module.exports = () => {
           test: /\.tsx?$/,
           use: "babel-loader",
           exclude: /node_modules/
-        },
+        }
       ]
     },
     devServer: {
       open: true,
-      historyApiFallback: true
+      hot: true
     },
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",

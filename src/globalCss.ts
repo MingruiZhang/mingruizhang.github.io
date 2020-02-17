@@ -3,6 +3,8 @@ import { injectGlobal } from "emotion";
 injectGlobal`
   body {
     font-family: "Raleway", sans-serif;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum" 1;
     letter-spacing: 1px;
     line-height: 1.5;
     margin: 0;
