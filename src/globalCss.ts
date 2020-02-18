@@ -1,15 +1,24 @@
 import { injectGlobal } from "emotion";
 
 injectGlobal`
+
+  @font-face {
+    font-family: Raleway;
+    src: url("assets/fonts/Raleway/raleway-regular.subset-webfont.woff2") format('woff2');
+    font-weight: 400;
+  }
+
   body {
-    font-family: "Raleway", sans-serif;
+    // font-family: 'rawline', sans-serif;
+    font-family: 'Raleway';
     font-variant-numeric: lining-nums;
-    font-feature-settings: "lnum" 1;
+    font-feature-settings: "lnum" on;
     letter-spacing: 1px;
     line-height: 1.5;
     margin: 0;
     height: 100%;
     font-size: 14px;
+    font-weight: 300;
   }
 
   * {
@@ -17,6 +26,10 @@ injectGlobal`
     padding: 0;
     display: 'flex';
     flex-direction: 'column';
+  }
+
+  h1, h2, h3, h4, b {
+    font-weight: 400;
   }
 
   a {

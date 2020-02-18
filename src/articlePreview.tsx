@@ -10,11 +10,11 @@ const ArticlePreviewContainer = styled.div`
 
 const ArticlePreviewTime = styled.p({
   marginBottom: 5,
+  fontSize: "0.85em",
   color: "rgba(113, 129, 141, 1)"
 });
 
 const ArticlePreviewTitle = styled.h3({
-  fontWeight: "bold",
   marginBottom: 5
 });
 
@@ -23,11 +23,13 @@ const ArticlePreviewTitleLink = styled(Link)({
 });
 
 const ArticlePreviewText = styled.span({
-  whiteSpace: "pre-line"
+  whiteSpace: "pre-line",
+  fontSize: "0.85em",
 });
 
 const ArticlePreviewCount = styled.i({
   color: "rgba(113, 129, 141, 1)",
+  fontSize: "0.85em",
 })
 
 const ArticlePreview = (props: ArticleProps) => {

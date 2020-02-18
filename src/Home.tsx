@@ -10,7 +10,7 @@ const HeaderSection = styled.section({
 });
 
 const HeaderTitle = styled.h1({
-  fontSize: 36
+  fontSize: "3em"
 });
 
 const HeaderSubtitle = styled.h3({

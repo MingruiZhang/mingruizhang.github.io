@@ -3,12 +3,13 @@ import { ArticleProps } from "./types";
 import styled from "@emotion/styled";
 
 const ArticleTitle = styled.h3({
-  marginBottom: 5,
-  fontSize: "1.6em"
+  marginBottom: 10,
+  fontSize: "2em"
 });
 
 const ArticleTime = styled.p({
   marginBottom: 30,
+  fontSize: "0.9em",
   color: "rgba(113, 129, 141, 1)"
 });
 
