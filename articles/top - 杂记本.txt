@@ -27,7 +27,7 @@ The hard thing about hard things
 <s>babel instead of ts-loader</s>
 <s>eslint</s>
 <s>js hash</s>
-字数统计
+<s>字数统计</s>
 侧栏
 标签统计
 favicon
