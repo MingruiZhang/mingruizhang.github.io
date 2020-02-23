@@ -1,0 +1,100 @@
+一周的时间读完了The hard thing about hard things，作者Ben Horowitz现在是Andreessen Horowitz VC的创始人，之前他和Marc Andreessen创业建立过LundCloud, Opsware 等公司。Opsware最后被HP以1.65B$收购。
+
+本书可以说是他讲述CEO的一些经验，可能遇到的一些问题，以及解决方法。
+
+如果我是一个CEO，我正在创业，这本书可以对我更有作用一些。但是即使设想自己是一个Manager，或者以此思考与理解High Level，也是有一点收获的吧。内容有一些松散，这次读后感也还是按照章节标题拆写想法吧。
+
+--
+
+<i>1. From communist to venture capitalist</i>
+
+这一章讲述了Ben Horowitz创业前经历，从童年的事情，认识妻子，到起初工作的经历。比较有意思的是Ben加入Netscape的时候27岁，29岁的时候就已经有三个孩子了，32岁创业做LundCloud。
+
+<i>2. "I will survive"</i>
+
+LundCloud的创业经历，如何快速增长到500人，然后经历了2000年的dotcom crash之后如何在生死边缘摸索，最后强行上市自救。最后拆除Opsware software成为了新公司，Lundcloud卖给了EDS (16.5M$)。
+
+<q>If you are going to eat shit, don't nibble
+  What would you do if we went bankrupt
+  Past the deadline is better than not having one
+</q>
+
+<i>3. This time with feeling</i>
+
+讲Opsware创业的故事，如何从一开始市场极其看衰（60M$ 现金 + 20M$ Yearly income from EDS，却估值30M$)。团结所有人，遇到EDS危机60天保住了90%的营收，为此收购了Telegram, 为其原来CTO支付cancer治疗费（并不需要）。之后快速增长，最后1.65被HP收购。
+
+<q>Whenever a large organization attempts to do anything, it always comes down to a single person who can delay the entire project
+  We have one bullet left in the gun and we must hit the target.
+  It was a great experience for them to be thrown into the middle of the ocean and told, "okay, swim"
+  Figure out the right product is the innovator's job, not the customer's job. The customer only knows what she thinks she wants based on her experience with the current product.
+  Conventional wisdom had nothing to do with the truth and the efficient market hypothesis was deceptive.
+  It's a good question to ask, "What am I not doing".
+</q>
+
+<i>4. When things fall apart</i>
+
+  The struggle
+  CEOs should tell it like it is
+  The right way to lay people off
+  Preparing to fire an executive
+  Demoting a loyal friend
+  Lies that losers tell
+  Lead bullets
+  Nobody cares
+
+<q>The ability to focus and make the best move when there are no good moves
+  It's the moment where you fell most like hiding or dying that ou can make the biggest difference as a CEO.
+  Keep death in mind at all times.
+  Don't be optimistic.
+  Humans particularly those who build things, only listen to the leading indicators of good news.
+  When things go wrong in your company, nobody cares.
+</q>
+
+<i>5. Take care of the people, the products, and the profits: in that order :</i>
+
+  A good place to work
+  Why startups should train their people
+  Is it okay to hire people from your friend's company
+  Why it's hard to bring big company execs into little companies
+  Hiring executives: if you've never done the job, how do you hire somebody good?
+  When employees misinterpret managers
+  Management debt
+  Management quality assurance
+
+<q>Hire for strength, not lack of weakness
+  Job of a big company executive is very different from the job of a small company executive.
+  The very best way to know what you want is to act in the role. Not just in title, but in real action.
+</q>
+
+<i>6. Concerning the going concern :</i>
+  How to minimize politics in your company
+  The right kind of ambition
+  Titles and promotions
+  When smart people are bad employees
+  Old people
+  One-on-one
+  Programming your culture
+  Taking the mystery out of scaling a company
+  The scale anticipation fallacy
+
+<q>Sometimes an organization doesn't need solution; it just needs clarity
+  Peter Principle: Sooner or Later they are promoted to a position at which they are no longer competent, and there they remain unable to ear further promotions
+  Law of Crappy People: For any title level in a large organization, the talent on that level will eventually converge to the crappiest person with the title.
+</q>
+
+How to lead even when you don't know where you are going :
+  The most difficult CEO skill
+  The fine line between fear and courage
+  Ones and twos
+  Follow the leader
+  Peacetime CEO/wartime CEO
+  Making yourself a CEO
+  How to evaluate CEOs
+
+First rule of entrepreneurship: there are no rules :
+  Solving the accountability vs. creativity paradox
+  The freaky Friday management technique
+  Staying great
+  Should you sell your company?
+
+

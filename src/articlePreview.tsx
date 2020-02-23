@@ -24,23 +24,23 @@ const ArticlePreviewTitleLink = styled(Link)({
 
 const ArticlePreviewText = styled.span({
   whiteSpace: "pre-line",
-  fontSize: "0.85em",
+  fontSize: "0.85em"
 });
 
 const ArticlePreviewCount = styled.i({
   color: "rgba(113, 129, 141, 1)",
-  fontSize: "0.85em",
-})
+  fontSize: "0.85em"
+});
 
 const ArticlePreview = (props: ArticleProps) => {
   const {
     article: { id, content, title, time }
   } = props;
-  console.log('content2: ', title, content.length);
-  const previewContent =
-    content
-      .split("\n\n")[0]
-      .replace(/\n/g, " ")
+  console.log("content2: ", title, content.length);
+  const previewContent = content
+    .split("\n\n")[0]
+    .replace(/\n/g, " ")
+    .substr(0, 50);
   const htmlContent = { __html: `${previewContent}... ` };
   return (
     <ArticlePreviewContainer>
@@ -49,7 +49,7 @@ const ArticlePreview = (props: ArticleProps) => {
         <ArticlePreviewTitleLink to={`/article/${id}`}>{title}</ArticlePreviewTitleLink>
       </ArticlePreviewTitle>
       <ArticlePreviewText dangerouslySetInnerHTML={htmlContent} />
-      <ArticlePreviewCount>({content.length} w.)</ArticlePreviewCount>
+      <ArticlePreviewCount>({content.length} c.)</ArticlePreviewCount>
     </ArticlePreviewContainer>
   );
 };

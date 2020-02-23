@@ -26,7 +26,7 @@ const Article = (props: ArticleProps) => {
     <>
       <ArticleTitle>{title}</ArticleTitle>
       <ArticleTime>
-        {time} - {content.length} words
+        {time} - {content.length} characters
       </ArticleTime>
       <ArticleText dangerouslySetInnerHTML={htmlContent} />
     </>
