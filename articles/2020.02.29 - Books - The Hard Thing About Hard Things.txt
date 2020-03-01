@@ -80,6 +80,7 @@ LundCloud的创业经历，如何快速增长到500人，然后经历了2000年�
 <q>Sometimes an organization doesn't need solution; it just needs clarity
   Peter Principle: Sooner or Later they are promoted to a position at which they are no longer competent, and there they remain unable to ear further promotions
   Law of Crappy People: For any title level in a large organization, the talent on that level will eventually converge to the crappiest person with the title.
+  If you like structured agendas, then the employee should set the agenda.
 </q>
 
 How to lead even when you don't know where you are going :
@@ -90,6 +91,10 @@ How to lead even when you don't know where you are going :
   Peacetime CEO/wartime CEO
   Making yourself a CEO
   How to evaluate CEOs
+
+<q>By far the most difficult skill I learned as CEO was the ability to manage my own psychology.
+  If you don't like choosing between horrible and cataclysmic, don't become CEO.
+</q>
 
 First rule of entrepreneurship: there are no rules :
   Solving the accountability vs. creativity paradox
