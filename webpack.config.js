@@ -5,18 +5,8 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const srcPath = path.join(__dirname, "./src");
 
-const commonPlugins = [
-  new HtmlWebpackPlugin({
-    template: path.resolve(srcPath, "./index.html"),
-    filename: path.resolve(__dirname, "./index.html"),
-  }),
-];
-const devPlugin = [];
-const prodPlugin = [new CleanWebpackPlugin()];
-
 module.exports = () => {
   const isDev = process.env.NODE_ENV === "dev";
-  const plugins = isDev ? [...commonPlugins, ...devPlugin] : [...commonPlugins, ...prodPlugin];
   return {
     entry: path.join(srcPath, "index.tsx"),
     mode: isDev ? "development" : "production",
@@ -43,6 +33,15 @@ module.exports = () => {
     resolve: {
       extensions: [".ts", ".tsx", ".js", ".json"],
     },
-    plugins,
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: path.resolve(srcPath, "./index.html"),
+        filename: path.resolve(__dirname, "./index.html"),
+      }),
+      new CleanWebpackPlugin({
+        cleanStaleWebpackAssets: !isDev,
+        cleanOnceBeforeBuildPatterns: ["./dist/**/*"],
+      }),
+    ],
   };
 };

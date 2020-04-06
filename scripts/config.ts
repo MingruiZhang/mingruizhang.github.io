@@ -1,28 +1,18 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
-import webpack from "webpack"
+import webpack from "webpack";
 
-const root = path.join(__dirname, "..")
-const srcPath = path.join(root, "./src");
+const rootPath = path.join(__dirname, "..");
+const srcPath = path.join(rootPath, "./src");
 
-const commonPlugins = [
-  new HtmlWebpackPlugin({
-    template: path.resolve(srcPath, "./index.html"),
-    filename: path.resolve(root, "./index.html"),
-  }),
-];
-
-const prodPlugin = [new CleanWebpackPlugin()];
-
-export const createCompilerConfig = (): webpack.Configuration => {
+export const createConfig = (): webpack.Configuration => {
   const isDev = process.env.NODE_ENV === "dev";
-  const plugins = isDev ? commonPlugins : [...commonPlugins, ...prodPlugin];
   return {
     entry: path.join(srcPath, "index.tsx"),
     mode: isDev ? "development" : "production",
     output: {
-      path: root,
+      path: rootPath,
       // HTML need to be under root for github pages
       filename: "dist/[name].[hash:8].js",
     },
@@ -40,6 +30,15 @@ export const createCompilerConfig = (): webpack.Configuration => {
     resolve: {
       extensions: [".ts", ".tsx", ".js", ".json"],
     },
-    plugins,
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: path.resolve(srcPath, "./index.html"),
+        filename: path.resolve(rootPath, "./index.html"),
+      }),
+      new CleanWebpackPlugin({
+        cleanStaleWebpackAssets: !isDev,
+        cleanOnceBeforeBuildPatterns: ["./dist/**/*"],
+      }),
+    ],
   };
 };

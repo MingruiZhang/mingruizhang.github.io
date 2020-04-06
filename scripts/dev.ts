@@ -1,9 +1,9 @@
 import webpack from "webpack";
 import WebpackDevServer from "webpack-dev-server";
-import { createCompilerConfig } from "./config";
+import { createConfig } from "./config";
 
 const PORT = 8888;
-const compilerConfig = createCompilerConfig();
+const compilerConfig = createConfig();
 const compiler = webpack(compilerConfig);
 
 const devServerOptions = {

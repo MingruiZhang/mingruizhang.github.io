@@ -7,7 +7,8 @@
     "start": "yarn article && NODE_ENV=dev webpack-dev-server --mode=development --hot",
     "build": "yarn article && NODE_ENV=prod webpack",
     "article": "node scripts/txt2json.js",
-    "start1": "nodemon --exec ts-node --watch scripts scripts/dev.ts"
+    "start1": "NODE_ENV=dev nodemon --exec ts-node --watch scripts scripts/dev.ts",
+    "build1": "yarn article && NODE_ENV=prod ts-node scripts/prod.ts"
   },
   "repository": {
     "type": "git",
