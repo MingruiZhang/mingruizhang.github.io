@@ -1,27 +1,28 @@
-const path = require("path");
+import path from "path";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import { CleanWebpackPlugin } from "clean-webpack-plugin";
+import webpack from "webpack"
 
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-
-const srcPath = path.join(__dirname, "./src");
+const root = path.join(__dirname, "..")
+const srcPath = path.join(root, "./src");
 
 const commonPlugins = [
   new HtmlWebpackPlugin({
     template: path.resolve(srcPath, "./index.html"),
-    filename: path.resolve(__dirname, "./index.html"),
+    filename: path.resolve(root, "./index.html"),
   }),
 ];
-const devPlugin = [];
+
 const prodPlugin = [new CleanWebpackPlugin()];
 
-module.exports = () => {
+export const createCompilerConfig = (): webpack.Configuration => {
   const isDev = process.env.NODE_ENV === "dev";
-  const plugins = isDev ? [...commonPlugins, ...devPlugin] : [...commonPlugins, ...prodPlugin];
+  const plugins = isDev ? commonPlugins : [...commonPlugins, ...prodPlugin];
   return {
     entry: path.join(srcPath, "index.tsx"),
     mode: isDev ? "development" : "production",
     output: {
-      path: __dirname,
+      path: root,
       // HTML need to be under root for github pages
       filename: "dist/[name].[hash:8].js",
     },
@@ -33,10 +34,6 @@ module.exports = () => {
           exclude: /node_modules/,
         },
       ],
-    },
-    devServer: {
-      open: true,
-      hot: true,
     },
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
